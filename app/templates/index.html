@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+	PTT: {% if ptt_status == 1 %} OFF {% else %} ON {% endif %} <br>
+<a href='{{ url_for('ptt_on') }}'>ON</a> - <a href='{{ url_for('ptt_off') }}'>OFF</a>
+{% endblock %}
